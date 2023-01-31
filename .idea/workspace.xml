@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bc952c4-fec1-4577-825f-e1491a595da3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/Accesobd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/AlumnosEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/AsignaturaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/ProfesorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="9bc952c4-fec1-4577-825f-e1491a595da3" name="Changes" comment="hql">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/DepartamentoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hqlproject/MatriculaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hqlproject/Accesobd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hqlproject/Accesobd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hqlproject/AsignaturaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hqlproject/AsignaturaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hqlproject/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hqlproject/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hqlproject/ProfesorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hqlproject/ProfesorEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +39,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar",
+    "last_opened_file_path": "C:/Users/jmferreira/Desktop/Acceso Datos/Tarea52Hibernate",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "two.files.diff.last.used.file": "C:/Users/jmferreira/Desktop/Acceso Datos/HQLProject2/src/main/java/hqlproject/AlumnosEntity.java"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -67,6 +55,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jmferreira\Desktop\Acceso Datos\HQLProject2\src\main\resources" />
       <recent name="C:\Users\jmferreira\Desktop\Acceso Datos\HQLProject2\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hqlproject" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,8 +88,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674810002540</updated>
-      <workItem from="1674810004056" duration="3958000" />
+      <workItem from="1674810004056" duration="4643000" />
+      <workItem from="1675149736569" duration="7705000" />
     </task>
+    <task id="LOCAL-00001" summary="hql">
+      <created>1674814279969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674814279969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hql" />
+    <option name="LAST_COMMIT_MESSAGE" value="hql" />
   </component>
 </project>

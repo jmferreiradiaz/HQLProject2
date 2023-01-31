@@ -37,12 +37,15 @@ public class Principal {
 
         switch (opc){
             case 1:
-                insertarObjeto(new ProfesorEntity("Gutierrez", "Fernandez", "Enrique"));
-                break;
-            case 2:
-                listarProfesores();
+                insertarObjeto(new ProfesorEntity("López", "Delgado", "Abraham"));
                 break;
             case 3:
+                insertarObjeto(new DepartamentoEntity("Informatica"));
+                break;
+            case 4:
+                listarProfesores();
+                break;
+            case 5:
                 listarProfesoresCondicion("listaProfesoresNombre","nombre","Paco");
             case 9:
                 System.exit(0);
@@ -56,6 +59,19 @@ public class Principal {
         instancia.cerrar();
     }
 
+    private static void asociarDepProf() throws Exception {
+        DepartamentoEntity dep = new DepartamentoEntity();
+        ProfesorEntity prof = new ProfesorEntity();
+        instancia.abrir();
+        prof = (ProfesorEntity)  instancia.leer(prof, 2);
+        dep = (DepartamentoEntity) instancia.leer(dep, 1);
+        prof.setDepartamento(dep);
+        instancia.guardar(prof);
+        instancia.cerrar();
+    }
+
+    //private static void
+
     public static void listarProfesores() throws Exception {
         instancia.abrir();
         List<ProfesorEntity> profesores = instancia.listarProfesores();
@@ -65,11 +81,21 @@ public class Principal {
         instancia.cerrar();
     }
 
+    public static void idDepartamentosPorNombre(String namedQuery, String param, String valor) throws Exception {
+        instancia.abrir();
+        List<DepartamentoEntity> departamentos = instancia.listarQuery(namedQuery,param,valor);
+        for (DepartamentoEntity departamento: departamentos) {
+            System.out.println(departamento.getNombre());
+        }
+        instancia.cerrar();
+
+    }
+
     public static void listarProfesoresCondicion(String namedQuery, String param, String valor) throws Exception {
         instancia.abrir();
-        List<String> nombres = instancia.listarProfesoresQuery(namedQuery,param,valor);
-        for (String nombre: nombres) {
-            System.out.println(nombre);
+        List<ProfesorEntity> nombres = instancia.listarQuery(namedQuery,param,valor);
+        for (ProfesorEntity nombre: nombres) {
+            System.out.println(nombre.getNombre());
         }
         instancia.cerrar();
 

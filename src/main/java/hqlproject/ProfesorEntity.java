@@ -26,6 +26,10 @@ public class ProfesorEntity implements Serializable {
     @Column(name = "nombre")
     private String nombre;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name= "idDep")
+    private DepartamentoEntity departamento;
+
     public ProfesorEntity() {
         this.ape1 = "";
         this.ape2 = "";
@@ -40,6 +44,10 @@ public class ProfesorEntity implements Serializable {
 
     public int getIdProf() {
         return idProf;
+    }
+
+    public void setIdProf(int idProf) {
+        this.idProf = idProf;
     }
 
     public String getApe1() {
@@ -64,5 +72,13 @@ public class ProfesorEntity implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public DepartamentoEntity getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(DepartamentoEntity departamento) {
+        this.departamento = departamento;
     }
 }

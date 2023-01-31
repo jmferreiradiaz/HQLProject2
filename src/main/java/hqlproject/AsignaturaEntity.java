@@ -59,6 +59,10 @@ public class AsignaturaEntity implements Serializable {
         return curso;
     }
 
+    public void setIdAsig(int idAsig) {
+        this.idAsig = idAsig;
+    }
+
     public void setCurso(int curso) {
         this.curso = curso;
     }

@@ -41,17 +41,19 @@ public class Accesobd {
         sf.close();
     }
 
-
     public List<ProfesorEntity> listarProfesores(){
         return sesion.createQuery("From ProfesorEntity ").getResultList();
     }
 
-    public List listarProfesoresQuery(String namedQuery, String param, String valor) {
+    public List listarQuery(String namedQuery, String param, String valor) {
         TypedQuery lista = sesion.getNamedQuery(namedQuery).setParameter(param,valor);
         return lista.getResultList();
     }
 
 
+    public Object leer(Object obj, int id){
+        return sesion.load(Object.class,id);
+    }
 
     public Object guardar(Object obj) {
         return sesion.save(obj);
